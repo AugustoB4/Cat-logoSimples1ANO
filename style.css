@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Cor1: #4CAF50;
+    --Cor2: #ffffff;
+    --Fonte1: 'Arial, sans-serif';
+    --Fonte2: 'Courier New, monospace';
+}
