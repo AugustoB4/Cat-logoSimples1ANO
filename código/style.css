@@ -4,8 +4,9 @@
 }
 
 :root {
-    --Cor1: #4CAF50;
-    --Cor2: #ffffff;
+    --CorDeFundo: #4CAF50;
+    --CorDestaque: #ffffff;
+    --Cor1:
     --Fonte1: 'Arial, sans-serif';
     --Fonte2: 'Courier New, monospace';
 }
