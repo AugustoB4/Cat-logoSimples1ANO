@@ -22,7 +22,7 @@ body {
 .título {
     font-family: 'Italianno', cursive;
     font-size: 3em;
-    color: var(--CorDestaque);
+    color: white;
     text-align: center;
     margin: 20px 0;
 }
