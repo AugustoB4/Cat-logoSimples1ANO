@@ -1,12 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap rel="stylesheet');
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --CorDeFundo: #4CAF50;
-    --CorDestaque: #ffffff;
-    --Cor1:
-    --Fonte1: 'Arial, sans-serif';
-    --Fonte2: 'Courier New, monospace';
+    --CorDeFundo: #ecd29b;
+    --CorDestaque: #ec6767;
+    --Fonte1: 'Italianno', cursive;
+    --Fonte2: 'Courier New', monospace;
 }
+
+body {
+    background-color: var(--CorDeFundo);
+    font-family: var(--Fonte1);
+    color: #333;
+}
+
+.título {
+    font-family: 'Italianno', cursive;
+    font-size: 3em;
+    color: var(--CorDestaque);
+    text-align: center;
+    margin: 20px 0;
+}
+
