@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap rel="stylesheet');
+
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --CorDeFundo: #ecd29b;
+    --CorDestaque: #e4bf28;
+    --Fonte1: 'Italianno', cursive;
+    --Fonte2: 'Courier New', monospace;
+}
+
+body {
+    background-color: var(--CorDeFundo);
+    font-family: var(--Fonte2);
+    color: #333;
+
+    width: 100%; 
+    margin: 0 auto;
+    min-width: 800px;
+}
+
+/* Detalhes Gerais */
+
+.titulo {
+    font-family: 'Italianno', cursive;
+    font-size: 3em;
+    color: white;
+    margin: 20px 0;
+}
+
+/* Parte superior do site */
+
+#superior {
+    background-image: url('Images/Fundo/PizzaNaMesaBackGround.png');background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: bottom right ;
+    background-attachment: fixed;
+
+    position: relative;
+    padding: 50px;
+    width: 100%;
+    height: 600px;
+}
+
+#superior .navegacao {
+    display: flex;
+}
+
+#superior .navegacao .titulo {
+    transform: translateY(-50px);
+    font-size: clamp(1.5em, 3em, 4em);
+}
+
+#superior .navegacao ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+
+    margin-left: auto;
+    margin-right: 80px;
+    transform: translateY(-15px);
+}
+
+#superior .navegacao ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: clamp(2vw, 2.5vw, 3vw);;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+#superior .propaganda {
+    position: absolute;
+    max-width: 600px;
+
+    padding: 20px;
+    left: 30px;
+
+    font-size: clamp(1.7vw, 1.85vw, 1.8vw);
+    color: white;
+}
+
+#superior .propaganda #botão {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: clamp(1vw, 1.5vw, 2vw);
+    background-color: var(--CorDestaque);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#superior .propaganda #botão:hover {
+    background-color: #d4aa1f;
+}
+
