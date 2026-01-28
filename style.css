@@ -7,20 +7,23 @@
 }
 
 :root {
-    --CorDeFundo: #ecd29b;
-    --CorDestaque: #e4bf28;
+    --CorFonte1: #E7BE76;
+    --CorFonte2: #fd9540;
+    --CorFundo1: #191919;
+    --CorFundo2: #0a0b0e;
+    --CorFundo3: #000000;
     --Fonte1: 'Italianno', cursive;
     --Fonte2: 'Courier New', monospace;
 }
 
 body {
-    background-color: var(--CorDeFundo);
+    background-color: var(--CorFundo2);
     font-family: var(--Fonte2);
     color: #333;
 
     width: 100%; 
     margin: 0 auto;
-    min-width: 800px;
+    min-width: 1200px;
 }
 
 /* Detalhes Gerais */
@@ -35,8 +38,9 @@ body {
 /* Parte superior do site */
 
 #superior {
-    background-image: url('Images/Fundo/PizzaNaMesaBackGround.png');background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('Images/Fundo/PizzaNaMesaBackGround.png');
+    background-size: cover;
+    background-repeat: repeat-y;
     background-clip: border-box;
     background-position: bottom right ;
     background-attachment: fixed;
@@ -52,11 +56,12 @@ body {
 }
 
 #superior .navegacao .titulo {
+    color: white;
     transform: translateY(-50px);
-    font-size: clamp(1.5em, 3em, 4em);
+    font-size: clamp(2em, 4em, 4em);
 }
 
-#superior .navegacao ul {
+#superior .navegacao > ul {
     list-style-type: none;
     display: flex;
     gap: 20px;
@@ -66,12 +71,27 @@ body {
     transform: translateY(-15px);
 }
 
-#superior .navegacao ul li a {
+#superior .navegacao > ul > li > a {
     text-decoration: none;
     color: white;
-    font-size: clamp(2vw, 2.5vw, 3vw);;
+    font-size: clamp(1.6vw, 1.9vw, 3vw);;
     font-weight: bold;
     font-variant: small-caps;
+}
+
+#superior .navegacao ul li a:hover {
+    color: var(--CorFonte2);
+    transition-duration: 0.5s;
+    transform: scaleY(20px)
+}
+
+#superior .propaganda > h2 {
+    font-size: clamp(2vw, 2.25vw, 2.5vw);
+}
+
+#superior .propaganda > p {
+    margin-top: 10px;
+    line-height: 1.5em;
 }
 
 #superior .propaganda {
@@ -91,12 +111,86 @@ body {
     font-size: clamp(1vw, 1.5vw, 2vw);
     background-color: var(--CorDestaque);
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    background-color: var(--CorFonte2);
+    border-radius: 25px;
 }
 
 #superior .propaganda #botão:hover {
-    background-color: #d4aa1f;
+    background-color: #fe8624a5 ;
+    transition-duration: 0.5s;
 }
 
+/* Parte do meio do site (hero) */
+
+.meio {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.meio .meioSuperior {
+    background-color: var(--CorFundo2);
+    color: white;
+
+    width: 100%;
+    height: 50%;
+
+    padding: 50px;
+    margin-top: -100px;
+}
+
+.meio .meioSuperior > h2 {
+    color: var(--CorFonte1);
+    font-family: var(--Fonte2);
+
+    width: 50%;
+}
+
+.meio .meioSuperior > p {
+    margin-top: 20px;
+    width: 50%;
+
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.meio .meioSuperior > img {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+
+    margin-left: 600px;
+
+    width: 400px;
+    height: auto;
+}
+
+.meio .meioSuperior > input {
+    color: var(--CorFonte2);
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    outline: 2px solid var(--CorFonte2);
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--CorFonte3);
+    border-radius: 25px;
+}
+.meio .meioSuperior > input:hover {
+    color:#fd9540;
+    outline: 2px solid #fd9540;
+    transition-duration: 0.5s;
+}
+
+.meio .Menu {
+    background-color: var(--CorFundo3);
+    width: 100%;
+    height: 0%;
+    margin-top: 20px;
+}
