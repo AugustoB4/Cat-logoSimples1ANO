@@ -134,11 +134,11 @@ body {
 }
 
 .meio .meioSuperior {
-    background-color: var(--CorFundo2);
+    background-color: #000102;
     color: white;
 
     width: 100%;
-    height: 50%;
+    height: 40%;
 
     padding: 50px;
     margin-top: -100px;
@@ -194,3 +194,5 @@ body {
     height: 0%;
     margin-top: 20px;
 }
+
+/* Parte do meio que tem menu */
