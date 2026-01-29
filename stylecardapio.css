@@ -1,0 +1,8 @@
+.comidas {
+    display: flex;
+    gap: 20px;
+}
+.comidas img {
+  width: 200px;
+  border-radius: 8px;
+}
