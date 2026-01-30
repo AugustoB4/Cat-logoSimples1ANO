@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
 
 /* Configurações Globais */
 * {
@@ -23,7 +24,6 @@ body {
 
     width: 100%; 
     margin: 0 auto;
-    min-width: 1200px;
 }
 
 /* Detalhes Gerais */
@@ -40,41 +40,45 @@ body {
 #superior {
     background-image: url('Images/Fundo/PizzaNaMesaBackGround.png');
     background-size: cover;
-    background-repeat: repeat-y;
-    background-clip: border-box;
-    background-position: bottom right ;
-    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right 78%;
+    background-color: #191919;
+    background-attachment: scroll;
 
     position: relative;
     padding: 50px;
     width: 100%;
-    height: 600px;
+    min-height: 1000px;
+    max-height: 1200px;
+    height: auto;
 }
 
 #superior .navegacao {
     display: flex;
+    align-items: center;
+
 }
 
 #superior .navegacao .titulo {
     color: white;
     transform: translateY(-50px);
-    font-size: clamp(2em, 4em, 4em);
+    font-size: clamp(2em, 6vh, 6em);
 }
 
 #superior .navegacao > ul {
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    gap: 40px;
 
     margin-left: auto;
     margin-right: 80px;
-    transform: translateY(-15px);
+    transform: translateY(-55px);
 }
 
 #superior .navegacao > ul > li > a {
     text-decoration: none;
     color: white;
-    font-size: clamp(1.6vw, 1.9vw, 3vw);;
+    font-size: clamp(1.6vw, 2vw, 2.5vw);;
     font-weight: bold;
     font-variant: small-caps;
 }
@@ -85,8 +89,20 @@ body {
     transform: scaleY(20px)
 }
 
+#superior .propaganda {
+    position: relative;
+    width: 50%;
+    max-width: none;
+
+    margin-top: 80px;
+    padding: 20px;
+
+    font-size: clamp(1.7vw, 1.85vw, 1.8vw);
+    color: white;
+}
+
 #superior .propaganda > h2 {
-    font-size: clamp(2vw, 2.25vw, 2.5vw);
+    font-size: clamp(2vw, 2.35vw, 2.7vw);
 }
 
 #superior .propaganda > p {
@@ -94,27 +110,18 @@ body {
     line-height: 1.5em;
 }
 
-#superior .propaganda {
-    position: absolute;
-    max-width: 600px;
-
-    padding: 20px;
-    left: 30px;
-
-    font-size: clamp(1.7vw, 1.85vw, 1.8vw);
-    color: white;
-}
 
 #superior .propaganda #botão {
-    margin-top: 20px;
-    padding: 10px 20px;
+    padding: 10px 50px;
+    border-radius: 25px;
+
     font-size: clamp(1vw, 1.5vw, 2vw);
-    background-color: var(--CorDestaque);
+    color: white;
+    text-decoration: none;
     border: none;
     cursor: pointer;
     font-weight: bold;
     background-color: var(--CorFonte2);
-    border-radius: 25px;
 }
 
 #superior .propaganda #botão:hover {
@@ -138,7 +145,7 @@ body {
     color: white;
 
     width: 100%;
-    height: 40%;
+    height: 45%;
 
     padding: 50px;
     margin-top: -100px;
@@ -148,15 +155,16 @@ body {
     color: var(--CorFonte1);
     font-family: var(--Fonte2);
 
-    width: 50%;
+    width: 55%;
+    font-size: clamp(1.3rem, 2vw, 2.3rem);
 }
 
 .meio .meioSuperior > p {
     margin-top: 20px;
-    width: 50%;
+    width: 55%;
 
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    line-height: 1.6em;
 }
 
 .meio .meioSuperior > img {
@@ -171,28 +179,45 @@ body {
 }
 
 .meio .meioSuperior > input {
+    background-color: var(--CorFonte3);
     color: var(--CorFonte2);
+    outline: 2px solid var(--CorFonte2);
+    border-radius: 25px;
+
     margin-top: 20px;
     padding: 10px 20px 10px 20px;
-    outline: 2px solid var(--CorFonte2);
-    height: 30px;
+    height: 50px;
+
     border: none;
     cursor: pointer;
+
     font-weight: bold;
-    background-color: var(--CorFonte3);
-    border-radius: 25px;
+    font-size: 20px;
+ 
 }
 .meio .meioSuperior > input:hover {
-    color:#fd9540;
-    outline: 2px solid #fd9540;
+    color:#fd9540b5;
+    outline: 2px solid #fd9540a7;
     transition-duration: 0.5s;
 }
 
+/* Parte do meio que tem menu */
 .meio .Menu {
     background-color: var(--CorFundo3);
+
     width: 100%;
     height: 0%;
-    margin-top: 20px;
+    margin: 50px;
 }
 
-/* Parte do meio que tem menu */
+.Menu > h2 {
+    text-align: center;
+    font-size: 60px;
+    color: #fd9540;
+}
+
+.Menu > p {
+    text-align: center;
+    font-size: 30px;
+    color: #fd9540;
+}
