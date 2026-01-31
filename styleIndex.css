@@ -251,6 +251,20 @@ body {
     margin: 0
 }
 
+.pratoMeio {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.pratosMeio img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
 
 /* Parte do meio que tem menu */
 .meio .menuInferior {
