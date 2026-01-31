@@ -178,13 +178,39 @@ body {
     height: auto;
 }
 
-.meio .meioSuperior > input {
+.meio .meioSuperior > a {
     background-color: var(--CorFonte3);
     color: var(--CorFonte2);
     outline: 2px solid var(--CorFonte2);
     border-radius: 25px;
 
     margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 10px 20px 10px 20px;
+    height: 50px;
+
+
+    border: none;
+    cursor: pointer;
+
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.meio .meioSuperior > a:hover {
+    color:#fd9540b5;
+    outline: 2px solid #fd9540a7;
+    transition-duration: 0.5s;
+}
+
+.meio .meioSuperior > a:visited {
+    background-color: var(--CorFonte3);
+    color: var(--CorFonte2);
+    outline: 2px solid var(--CorFonte2);
+    border-radius: 25px;
+
+    margin-top: 20px;
+    margin-bottom: 50px;
     padding: 10px 20px 10px 20px;
     height: 50px;
 
@@ -193,12 +219,7 @@ body {
 
     font-weight: bold;
     font-size: 20px;
- 
-}
-.meio .meioSuperior > input:hover {
-    color:#fd9540b5;
-    outline: 2px solid #fd9540a7;
-    transition-duration: 0.5s;
+    text-decoration: none;
 }
 
 /* Parte do meio que tem menu */
