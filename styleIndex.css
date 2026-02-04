@@ -15,13 +15,13 @@
     --CorFundo2: #0a0b0e;
     --CorFundo3: #000000;
     --Fonte1: 'Italianno', cursive;
-    --Fonte2: 'Courier New', monospace;
+    --Fonte2: 'Arial', sans-serif;
 }
 
 body {
     background-color: var(--CorFundo2);
     font-family: var(--Fonte2);
-    color: #333;
+    color: #ffffff;
 
     width: 100%; 
     margin: 0 auto;
@@ -39,9 +39,9 @@ body {
 /* Parte superior do site */
 
 #superior {
-    background-image: url('Images/Fundo/PizzaNaMesaBackGround.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('Images/Fundo/FundoEscuro.png');
+    background-size: contain;
+    background-repeat: repeat;
     background-position: right 78%;
     background-color: #191919;
     background-attachment: scroll;
@@ -49,20 +49,18 @@ body {
     position: relative;
     padding: 60px 50px 120px;
     width: 100%;
-    min-height: 100vh;
     height: auto;
 }
 
 #superior .navegacao {
+    width: 100%;
     display: flex;
     align-items: center;
-
 }
 
 #superior .navegacao .titulo {
     color: white;
-    transform: translateY(-50px);
-    font-size: clamp(2em, 6vh, 6em);
+    font-size: clamp(2em, 6em, 8em);
 }
 
 #superior .navegacao > ul {
@@ -71,14 +69,13 @@ body {
     gap: 40px;
 
     margin-left: auto;
-    margin-right: 80px;
-    transform: translateY(-55px);
 }
 
 #superior .navegacao > ul > li > a {
-    text-decoration: none;
     color: white;
-    font-size: clamp(1.6vw, 2vw, 2.5vw);;
+
+    font-size: clamp(1.6vw, 2vw, 2.5vw);
+    text-decoration: none;
     font-weight: bold;
     font-variant: small-caps;
 }
@@ -94,7 +91,7 @@ body {
     width: 100%;
     max-width: 50%;
 
-    margin-top: 80px;
+    margin-top: 12vh;
     padding: 20px;
 
     font-size: clamp(2vw, 2.40vw, 2.50vw);
@@ -133,156 +130,16 @@ body {
     transition-duration: 0.5s;
 }
 
+#superior img {
+    position: absolute;
+
+    margin-right: 50px;
+    margin-top: 10vh;
+
+    right: 0;
+    width: 30%;
+    height: auto;
+}
+
 /* Parte do meio do site (hero) */
 
-.meio {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    height: auto;
-
-    margin-bottom: 100px;
-}
-
-.meio .meioSuperior {
-    background-color: #000102;
-    color: white;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-
-    width: 100%;
-    height: 45%;
-
-    padding: 50px;
-}
-.meio .meioSuperior {
-    background-color: #000102;
-    color: white;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-
-    width: 100%;
-    height: 45%;
-
-    padding: 50px;
-}
-
-.meio .meioSuperior .texto {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 70%;
-}
-
-.meio .meioSuperior .texto> h2 {
-    color: var(--CorFonte1);
-    font-family: var(--Fonte2);
-    margin-bottom: 20px;
-
-    max-width: 1200px;
-    font-size: clamp(1rem, 1.8vh, 4rem);
-}
-
-.meio .meioSuperior .texto> p {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    max-width: 1200px;
-
-    font-size: clamp(1rem, 1.6vh, 4rem);
-    line-height: 1.6em;
-}
-
-
-.meio .meioSuperior .texto > a {
-    background-color: var(--CorFonte3);
-    color: var(--CorFonte2);
-    outline: 2px solid var(--CorFonte2);
-    border-radius: 25px;
-    align-self: flex-start;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 12px 24px;
-    height: auto;
-
-    border: none;
-    cursor: pointer;
-
-    font-weight: bold;
-    font-size: 40px;
-    text-decoration: none;
-}
-
-.meio .meioSuperior .texto > a:hover {
-    color:#fd954040;
-    outline: 2px solid #fd9540a7;
-    transition-duration: 0.5s;
-}
-
-.meio .meioSuperior .texto > a:visited {
-    background-color: var(--CorFonte3);
-    color: var(--CorFonte2);
-    outline: 2px solid var(--CorFonte2);
-    border-radius: 25px;
-
-    margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 10px 20px 10px 20px;
-    height: 50px;
-
-    border: none;
-    cursor: pointer;
-
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.meio .meioSuperior > img {
-    max-width: 750px;
-    width: 100%;
-    height: auto;
-    margin: 0
-}
-
-.pratoMeio {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.pratosMeio img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-}
-
-
-
-/* Parte do meio que tem menu */
-.meio .menuInferior {
-    width: 100%;
-    height: 0%;
-    margin: 50px;
-}
-
-.menuInferior > h2 {
-    text-align: center;
-    font-size: 60px;
-    font-size: clamp(2em, 6vh, 6em);
-    color: #fd9540;
-}
-
-.menuInferior > p {
-    text-align: center;
-    font-size: 30px;
-    font-size: clamp(1em, 2vh, 3em);
-    color: #fd9540;
-}
