@@ -100,8 +100,11 @@ body {
 /* EMPURRA O RODAPÉ PRA BAIXO */
 footer {
     background-color: rgba(20, 20, 20, 0.9);
-    margin-top: 113px;
     padding: 40px 20px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
 }
 /* DIREITOS RESERVADOS */
 .rodape-quase-final {
