@@ -1,111 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
-
-/* Configurações Globais */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
     --CorFonte1: #E7BE76;
     --CorFonte2: #fd9540;
-    --CorFonte3: transparent;
-    --CorFundo1: #191919;
     --CorFundo2: #0a0b0e;
-    --CorFundo3: #000000;
     --Fonte1: 'Italianno', cursive;
-    --Fonte2: 'Arial', sans-serif;
+    --Fonte2: Arial, sans-serif;
 }
 
 body {
     background-image: url('Images/Fundo/FundoEscuro.png');
-    background-size: contain;
     background-repeat: repeat;
-    background-position: right 78%;
-    background-color: #191919;
-    background-attachment: scroll;
     background-color: var(--CorFundo2);
     font-family: var(--Fonte2);
-    color: #ffffff;
-
-    width: 100%; 
-    margin: 0 auto;
-}
-
-/* Detalhes Gerais */
-
-.titulo {
-    font-family: 'Italianno', cursive;
-    font-size: 3em;
     color: white;
-    margin: 20px 0;
 }
 
-/* Parte superior do site */
+/* ---------- TOPO ---------- */
 
 #superior {
-    position: relative;
-    padding: 60px 50px 120px;
-    width: 100%;
-    height: auto;
+    padding: 60px 50px;
 }
 
-#superior .navegacao {
-    width: 100%;
+.navegacao {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-#superior .navegacao .titulo {
-    color: white;
-    font-size: clamp(2em, 6em, 8em);
+.titulo {
+    font-family: var(--Fonte1);
+    font-size: 3em;
 }
 
-#superior .navegacao > ul {
-    list-style-type: none;
+.navegacao ul {
+    list-style: none;
     display: flex;
     gap: 40px;
-
     margin-left: auto;
 }
 
-#superior .navegacao > ul > li > a {
+.navegacao a {
     color: white;
-
-    font-size: clamp(1.6vw, 2vw, 2.5vw);
     text-decoration: none;
     font-weight: bold;
-    font-variant: small-caps;
 }
 
-#superior .navegacao ul li a:hover {
+.navegacao a:hover {
     color: var(--CorFonte2);
-    transition-duration: 0.5s;
-    transform: scaleY(1.05)
 }
 
+/* ---------- CONTATO ---------- */
 
-/* Parte do meio do site */
 .caixadeproblemas {
-    width: 50%;
-    height: 40vh;
-    margin-top: 500px;
-    background-color: rgb(50, 50, 50);
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-} 
-.email{
-    width: 40vh;
-    height: 60px;
-    margin-top: 300px;
-    margin-left: 8%;
-    font-size: 50px;
+    width: 500px;
+    background-color: rgba(50, 50, 50, 0.85);
+    border-radius: 30px;
+    padding: 30px;
+    margin: 100px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-.assunto{
-    width: 40vh;
-    height: 60px;
-    margin-top: 300px;
-    margin-left: 8%;
-    font-size: 50px;
+
+.caixadeproblemas input {
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* BOTÃO */
+.caixadeproblemas button {
+    height: 55px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 80px;
+    border: none;
+    background-color: var(--CorFonte2);
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.caixadeproblemas button:hover {
+    transform: scale(1)
+}
+
+footer {
+    background-color: rgba(20, 20, 20, 0.9);
+    margin-top: 300px; /* 🔽 EMPURRA O RODAPÉ PRA BAIXO */
+    padding: 40px 20px;
 }
