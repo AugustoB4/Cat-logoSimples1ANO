@@ -11,7 +11,7 @@
     --CorFonte1: #E7BE76;
     --CorFonte2: #fd9540;
     --CorFonte3: transparent;
-    --CorFundo1: #191919;
+    --CorFundo1: #ffeaba;
     --CorFundo2: #0a0b0e;
     --CorFundo3: #000000;
     --Fonte1: 'Italianno', cursive;
@@ -19,7 +19,7 @@
 }
 
 body {
-    background-color: var(--CorFundo2);
+    background-color: white;
     font-family: var(--Fonte2);
     color: #ffffff;
 
@@ -142,4 +142,53 @@ body {
 }
 
 /* Parte do meio do site (hero) */
+
+.hero {
+    width: 100%;
+    height: 300px;
+
+    background-image: url('Images/Fundo/FundoBege.png');
+    background-size: cover;
+
+    display: flex;
+    align-items: center;       
+    justify-content: space-between;
+    gap: 80px;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 100px;
+    background-color: #fdf6eb;
+}
+
+.hero .imagemhero img {
+    width: 800px;
+    height: auto;
+}
+
+.hero .textohero {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 2000px;
+}
+
+.hero .textohero h2 {
+    font-size: clamp(2vw, 3vw, 4vw);
+    color: var(--CorFundo2);
+}
+
+.hero .textohero p {
+    margin-top: 20px;
+    line-height: 1.5em;
+    font-size: clamp(1vw, 1.5vw, 2vw);
+    color: var(--CorFundo2);
+}
+
+.hero .textohero span {
+    display: block;
+   
+    font-size: clamp(4vw, 6vw, 8vw);
+    color: var(--CorFonte2);
+    font-weight: bold;
+}
 
