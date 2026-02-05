@@ -7,8 +7,9 @@ body {
 /* NAV */
 .navegacao {
     display: flex;
-    justify-content: center;
-    padding: 20px 0;
+    justify-content: space-between; /* título à esquerda, menu à direita */
+    align-items: center;
+    padding: 20px 40px;
 }
 
 .navegacao ul {
@@ -33,10 +34,10 @@ body {
 /* TÍTULO */
 .titulo-cardapio {
     color: white;
-    font-family: 'Italianno', cursive;
-    font-size: 50px;
-    text-align: center;
-    margin: 20px 0 40px 0;
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 /* COMIDAS */
@@ -87,6 +88,11 @@ p {
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
+    .navegacao {
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .navegacao ul {
         flex-wrap: wrap;
         justify-content: center;
