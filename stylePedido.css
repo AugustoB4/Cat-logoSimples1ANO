@@ -1,104 +1,95 @@
-body{
+body {
     background-color: black;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
-    padding: 20px;
-    text-align: center;
+/* NAV */
+.navegacao {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.navegacao ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navegacao ul li a {
     color: white;
-    
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
 }
 
+.navegacao ul li a:hover {
+    color: orangered;
+}
+
+/* TÍTULO */
 .titulo-cardapio {
     color: white;
-    padding: 15px;
-    font-size: 24px;
-    border-radius: 8px;
     font-family: 'Italianno', cursive;
     font-size: 50px;
-}
-
-.titulo-pedido {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin: 20px 0 40px 0;
 }
 
+/* COMIDAS */
 .comidas {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
     gap: 20px;
-    ;
+    padding: 20px;
+}
 
+.comidas img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 figcaption {
     color: white;
     text-align: center;
     margin-top: 8px;
-    font-family: Arial, Helvetica, sans-serif;
 }
-.comidas img {
-    width: 200px;       
-    height: 200px;      
-    object-fit: cover;  
-    border-radius: 10px;
-}
+
+/* BOTÃO */
 button {
     margin-top: 15px;
-    padding: 12px 25px;       
-    border-radius: 25px;       
-    border: none;              
-    background-color: orangered; 
-    color: white;              
-    font-size: 16px;           
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
     font-weight: bold;
-    cursor: pointer;           
-    transition: transform 0.2s, background-color 0.2s; 
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: orangered;
     transform: scale(1.05);
 }
-p{
+
+/* TEXTO FINAL */
+p {
     color: white;
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-.titulo{
-    color: white;
-    font-family: 'Italianno', cursive;
-}
-.navegacao{
-    width: 100%;
-    display: flex;
-    justify-content: space-between; /* título de um lado, menu do outro */
-    align-items: center;
-    padding: 20px 40px;
+    text-align: center;
+    padding: 30px;
 }
 
-.navegacao ul {
-    display: flex;
-    gap: 40px;            /* espaço entre os links */
-    list-style: none;     /* tira as bolinhas */
-    margin: 0;
-    padding: 0;
-}
-
-.navegacao ul li a {
-    color: white;         
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.navegacao ul li a:hover {
-    color: orangered;       
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .navegacao ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
 }
