@@ -65,10 +65,11 @@ body {
     border-radius: 30px;
     padding: 30px;
     margin: 100px auto;
-
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .caixadeproblemas input {
@@ -91,14 +92,30 @@ body {
     color: #ffffff;
     cursor: pointer;
     transition: 0.3s;
-}
-
+ }
 .caixadeproblemas button:hover {
-    transform: scale(1)
+    transform: scale(1.07);
+    background-color: #fd95406b;
 }
-
+/* EMPURRA O RODAPÉ PRA BAIXO */
 footer {
     background-color: rgba(20, 20, 20, 0.9);
-    margin-top: 300px; /* 🔽 EMPURRA O RODAPÉ PRA BAIXO */
+    margin-top: 113px;
     padding: 40px 20px;
+}
+/* DIREITOS RESERVADOS */
+.rodape-quase-final {
+    color: gray;
+    font-size: 13px;
+    margin-left: 280px;
+}
+/* AJUSTA OS MEIOS DE CONTATO */
+.rodape-final {
+    color: gray;
+    font-size: 13px;
+    margin-left: 150px;
+}
+
+.rodape-suporte {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
