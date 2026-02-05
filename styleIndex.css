@@ -134,12 +134,13 @@ body {
     font-weight: bold;
 
     background-color: var(--CorFonte2);
+    transition: all 0.3s ease;
 }
 
 #superior .propaganda #botao:hover {
     background-color: #fe8624a5 ;
     transition-duration: 0.5s;
-    transform: translateY(-8px);
+    transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
@@ -289,14 +290,14 @@ body {
     margin-bottom: 8px;
 }
 
-.preco {
+.item .preco {
     color: #fd9540;
     font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 16px;
 }
 
-.botaopedido {
+.item .botaopedido {
     margin-top: auto;
 
     background: linear-gradient(135deg, #fd9540, #ffb347);
@@ -310,7 +311,89 @@ body {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.botaopedido:hover {
+.item .botaopedido:hover {
     transform: scale(1.05);
 }
+
+/* Rodapé */
+
+footer {
+    position: relative;
+    overflow: hidden;
+}
+
+.rodape {
+    width: 100%;
+    min-height: 00px;
+    background-image: url(Images/Fundo/FundoDelivery.png);
+    background-size: auto;
+    background-position: bottom center;
+    background-repeat: repeat-x;
+     padding: 60px 8%;
+}
+
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.textorodape {
+    max-width: 520px;
+    color: #fff;
+}
+
+.textorodape h2 {
+    font-size: 5rem;
+    color: #E7BE76;
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.textorodape p {
+    font-size: 2rem;
+    line-height: 1.6;
+    color: #d9d9d9;
+
+    margin-bottom: 30px;
+}
+
+.textorodape a {
+    background-color: #fd9540;
+    color: #191919;
+
+    display: inline-block;
+
+    padding: 14px 36px;
+    border-radius: 50px;
+
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.textorodape a:hover {
+    background-color: #E7BE76;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.imagemrodape {
+    position: absolute;
+    bottom: auto 0;    
+}
+
+.imagemrodape img {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+}
+
+
 
