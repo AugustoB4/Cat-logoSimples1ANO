@@ -386,12 +386,16 @@ footer {
 
 .imagemrodape {
     position: absolute;
-    bottom: auto 0;    
+    bottom: 0;
+    right: 6%;
+    display: flex;
+    align-items: flex-end;
+    pointer-events: none;
 }
 
 .imagemrodape img {
-    max-width: 420px;
-    width: 100%;
+    max-width: 500px;
+    min-width: 350px;
     height: auto;
 }
 
